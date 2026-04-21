@@ -1,66 +1,40 @@
-# Welcome to QuantisAI 🚀
-
-**QuantisAI** is an advanced AI-powered platform designed to simplify, accelerate, and scale intelligent solutions across multiple domains. Whether you're a developer, business owner, or creator, QuantisAI provides powerful tools to build, deploy, and integrate AI seamlessly into your workflow.
-
-## 🌟 What is QuantisAI?
-
-QuantisAI is a unified ecosystem that enables users to leverage cutting-edge artificial intelligence models for tasks such as:
-
-- Text generation and processing  
-- AI voice and speech solutions  
-- Image generation and enhancement  
-- Automation of workflows  
-- API-based AI integration  
-
-Our mission is to make AI **accessible, scalable, and efficient** for everyone.
-
-## ⚡ Key Features
-
-### 🧠 Advanced AI Models
-Access state-of-the-art AI models optimized for performance, accuracy, and speed.
-
-### 🔗 Easy API Integration
-Integrate AI into your applications with simple, developer-friendly APIs.
-
-### 🚀 High Performance Infrastructure
-Built to handle high traffic and large-scale AI workloads with minimal latency.
-
-### 🎨 Multi-Modal Capabilities
-Work with text, images, and audio—all in one platform.
-
-### 🔒 Secure & Reliable
-We prioritize data privacy, security, and consistent uptime.
-
-## 🎯 Use Cases
-
-QuantisAI can be used for:
-
-- AI-powered SaaS applications  
-- Content creation and automation  
-- Voice assistants and TTS systems  
-- Chatbots and conversational AI  
-- Image and media generation tools  
-
-## 🛠️ Who is it for?
-
-- **Developers** building AI applications  
-- **Startups** creating AI-driven products  
-- **Businesses** automating workflows  
-- **Creators** enhancing content production  
-
-## 🚀 Getting Started
-
-Start using QuantisAI in just a few steps:
-
-1. Sign up on the platform  
-2. Generate your API key  
-3. Explore available AI services  
-4. Integrate into your application  
-
-## 🌐 Vision
-
-At QuantisAI, we aim to empower innovation by making AI tools more **accessible, affordable, and scalable** for the next generation of builders.
-
+---
+title: "Introduction to QuantisAI"
+description: "The world's most realistic AI text-to-speech platform designed for batch audio, ultra-low latency, and transparent pricing."
 ---
 
-> Build smarter. Scale faster. Create without limits — with QuantisAI.
+# Welcome to QuantisAI
+
+QuantisAI is a developer-first, studio-quality AI synthesis platform designed to replace legacy Text-to-Speech (TTS) providers with speed, efficiency, and scale. Our mission is to democratize high-fidelity neural speech by removing the "enterprise tax" and providing a robust infrastructure for high-throughput batch processing.
+
+
+## Core Value Proposition
+
+In an industry where growth is often penalized by high costs, QuantisAI rewards scale. We offer a 96% cost reduction compared to traditional providers like ElevenLabs or Azure TTS, without compromising on audio quality.
+
+### Key Features
+
+- **Studio-Quality Synthesis**: Neural voices that capture subtle nuances, emotions, and breaths, offering 48kHz stereo output for a truly human-like experience.
+- **Built for Batch Automation**: Unlike platforms that require manual generation, our RESTful API is architected for infinite parallelism, allowing you to process thousands of documents simultaneously.
+- **Ultra-Low Latency**: With an average global latency of ~2s, QuantisAI is optimized for real-time content delivery and interactive agents.
+- **Edge Deployment**: Our neural models run on distributed edge infrastructure to ensure reliable performance regardless of your geographic location.
+
+## How it Works
+
+QuantisAI uses a modern RESTful architecture. You can integrate our synthesis engine into your workflow with just a few lines of code.
+
+
+```javascript
+const res = await fetch('[https://api.quantisai.com/v1/tts](https://api.quantisai.com/v1/tts)', {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    text: "Synthesizing batch audio at scale.",
+    voice_id: "rahul-hi-male",
+    format: "mp3"
+  })
+});
+const audioBlob = await res.blob();
