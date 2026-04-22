@@ -1,1 +1,61 @@
+---
+title: "Speech to Text"
+description: "Convert audio and video files into high-accuracy text with QuantisAI's neural transcription engine."
+---
+
 # Speech to Text
+
+The **QuantisAI Speech to Text** tool leverages state-of-the-art automatic speech recognition (ASR) models to provide lightning-fast, highly accurate transcriptions. Designed for researchers, content creators, and developers, it handles everything from short voice notes to long-form video content.
+
+## Key Features
+
+- **Multilingual Recognition**: Support for over 50+ languages, including specialized optimization for Hindi and regional dialects.
+- **Ultra-Low Latency**: Powered by our distributed edge infrastructure, ensuring your transcriptions are ready in a fraction of the playback time.
+- **Speaker Diarization**: (Available in Pro) Automatically identifies and labels different speakers within a single audio file.
+- **Punctuation & Formatting**: Intelligent neural processing that adds natural punctuation, capitalization, and paragraph breaks.
+
+## Getting Started
+
+### 1. Uploading Media
+Navigate to the **Speech to Text** tab in your dashboard. You can provide source material in two ways:
+- **File Upload**: Drag and drop your audio or video files (MP3, WAV, MP4, etc.) directly into the upload zone.
+- **URL Import**: Paste a link to a hosted file or supported video platform to fetch the audio automatically.
+
+### 2. Configuration
+Before starting the transcription, customize the output settings:
+- **Source Language**: Select the language spoken in the audio. You can also choose "Auto-Detect" to let the AI identify the language for you.
+- **Task Type**: Choose between **Transcription** (text in the original language) or **Translation** (converting the speech directly into English text).
+- **Timestamping**: Enable timestamps if you need to align the text with specific moments in the video or audio file.
+
+### 3. Processing
+Once you click **Transcribe**, the system begins processing. You can monitor the progress bar in the workspace. For large files, you can navigate away from the page; the task will continue in the background and appear in your history once complete.
+
+## Managing Transcripts
+
+### The Editor Workspace
+After processing, your text appears in an interactive editor where you can:
+- **Search & Replace**: Quickly fix specific terms or names.
+- **Playback Sync**: Click on any word to play the audio from that exact timestamp, making verification effortless.
+- **Export Options**: Download your final transcript in multiple formats, including:
+    - **Plain Text (.txt)** for documentation.
+    - **Subtitles (.srt or .vtt)** for video production.
+    - **JSON** for developer integration.
+
+## Technical Limits
+
+| Feature | Starter Plan | Pro Plan |
+| :--- | :--- | :--- |
+| **Max File Size** | 25 MB | 500 MB |
+| **Max Duration** | 60 Minutes / Session | 360 Minutes / Session |
+| **Priority Queue** | Standard | High Priority |
+| **Speaker Labels** | Basic | Advanced Diarization |
+
+## API Integration
+
+For developers looking to automate transcription workflows, the `/v1/stt` endpoint supports multipart/form-data uploads for seamless integration into your own apps.
+
+```bash
+curl -X POST [https://api.quantisai.com/v1/stt](https://api.quantisai.com/v1/stt) \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -F "file=@audio.mp3" \
+  -F "language=hi"
