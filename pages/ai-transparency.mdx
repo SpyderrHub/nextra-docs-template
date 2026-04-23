@@ -1,0 +1,56 @@
+---
+title: "AI Transparency & Model Disclosure"
+description: "Understanding the technology, safety measures, and models behind QuantisAI."
+---
+
+# AI Transparency
+
+At QuantisAI, we believe that transparency is the foundation of ethical artificial intelligence. As we push the boundaries of speech synthesis and recognition, we are committed to being open about the models we use, how they are trained, and the safeguards we implement to prevent misuse.
+
+---
+
+## Our Technology Stack
+
+QuantisAI leverages a blend of industry-leading open-source foundational models and proprietary optimizations to deliver studio-quality audio.
+
+### 1. Text-to-Speech (TTS): IndicF5 & Qwen-TTS
+For our core synthesis engine, we utilize high-performance neural architectures optimized for linguistic diversity:
+
+* **IndicF5**: We utilize the **IndicF5** framework to power our high-fidelity Indic language synthesis. This model is specifically designed to handle the phonetic complexities of languages like Hindi, ensuring natural prosody, correct syllable stress, and emotional resonance.
+* **Qwen-TTS**: For global language support and advanced conversational AI, we integrate **Qwen-TTS** (developed by Alibaba's Qwen team). This model excels in zero-shot voice cloning and generating expressive speech with ultra-low latency.
+
+### 2. Speech-to-Text (STT): OpenAI Whisper
+Our transcription and translation services are powered by the **Whisper AI** architecture. 
+* **Performance**: Whisper allows us to provide robust speech recognition even in noisy environments or with diverse accents.
+* **Multilingualism**: By using Whisper, we offer seamless translation from 50+ languages directly into English or original-language transcriptions.
+
+---
+
+## Safety and Responsibility
+
+### Watermarking and Provenance
+To ensure accountability, QuantisAI is committed to audio provenance.
+* **Metadata Tagging**: Audio generated on the Starter and Creator plans may contain digital markers or metadata that identify it as AI-generated.
+* **Deepfake Prevention**: We actively monitor for patterns of misuse. Our **Voice Cloning** feature requires users to attest that they have the necessary rights to the voice being synthesized.
+
+### Model Fine-Tuning & Data Privacy
+* **Private Models**: When you create a "Voice Twin" using our Voice Cloning tool, that model is your private asset. We do not use your private voice samples to train our foundational IndicF5 or Qwen models for other users.
+* **Continuous Evaluation**: We regularly benchmark our models against industry standards to identify and mitigate biases in speech patterns and recognition accuracy.
+
+---
+
+## Limitations and Nuance
+
+While our AI is state-of-the-art, users should be aware of current technical limitations:
+* **Contextual Understanding**: AI may occasionally misinterpret specific jargon or highly localized slang in the STT process.
+* **Hallucinations**: In rare cases, TTS models may produce minor phonetic artifacts if the input text contains unrecognized symbols or non-standard Unicode characters.
+
+## Commitment to the Community
+
+QuantisAI thrives on the innovation of the open AI community. By utilizing and contributing back to frameworks like IndicF5 and Whisper, we aim to move the entire field of AI audio forward. 
+
+We encourage our users to disclose the use of AI-generated content in their projects, fostering an environment of honesty and trust with their audiences.
+
+---
+
+*If you have questions about our model implementations or safety protocols, please contact our transparency team at [transparency@quantisai.org](mailto:transparency@quantisai.org).*
