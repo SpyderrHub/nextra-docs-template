@@ -2,7 +2,7 @@ export default {
   "getting-started": {
     title: "Getting Started",
     type: "folder",
-    collapsed: false
+    collapsed: true
   },
   welcome: {
     title: "Welcome"
