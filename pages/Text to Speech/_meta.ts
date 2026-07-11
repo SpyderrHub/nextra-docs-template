@@ -1,6 +1,6 @@
 export default {
-  "getting-started": {
-    title: "Getting Started",
+  "text-to-speech": {
+    title: "Text to Speech",
     type: "folder",
     collapsed: true
   }
