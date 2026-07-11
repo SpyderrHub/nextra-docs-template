@@ -1,8 +1,8 @@
 export default {
   "getting-started": {
     title: "Getting Started",
-    type: "menu",
-    collapsed: true
+    type: "folder",
+    collapsed: false
   },
   welcome: {
     title: "Welcome"
