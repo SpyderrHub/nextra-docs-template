@@ -4,4 +4,19 @@ export default {
     type: "folder",
     collapsed: true
   }
+  welcome: {
+    title: "Welcome"
+  },
+  "quick-start": {
+    title: "Quick Start"
+  },
+  dashboard: {
+    title: "Dashboard"
+  },
+  pricing: {
+    title: "Pricing"
+  },
+  credits: {
+    title: "Credits"
+  }
 }
