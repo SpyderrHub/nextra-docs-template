@@ -1,7 +1,7 @@
 export default {
   "getting-started": {
     title: "Getting Started",
-    collapsed: true
+    sidebar.autoCollapse: true
   },
   welcome: {
     title: "Welcome"
